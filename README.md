@@ -1,7 +1,7 @@
 # barbearia_shop
 
 
-REQUISITOS: https://docs.google.com/document/d/1uiOvgssEHaEDYWMh07UVlerNOkrfQrRExp0Yqmub4qA/edit?tab=t.0
+REQUISITOS: https://docs.google.com/document/d/1NU26VRrztwoMmB8LEulYX5yiGXVazu839WAnNKY_oBk/edit?tab=t.0
 
 
 
