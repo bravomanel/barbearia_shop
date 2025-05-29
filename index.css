@@ -1,0 +1,31 @@
+body {
+    background-color: #141518;
+}
+
+#section-principal {
+    background-image: url('images/barber-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+
+}
+
+/* #section2 {
+    height: 100%;
+} */
+
+
+footer {
+    background-color: #1A1B1F;
+    color: #838896;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #6c757d;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
