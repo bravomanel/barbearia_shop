@@ -3,19 +3,151 @@ body {
 }
 
 #section-principal {
-    background-image: url('images/barber-background.png');
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('images/index-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 300px;
+    
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+#section-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 27rem;
+}
+
+#card-usuario {
+    width: 27rem;
+    margin-left: 8rem;
+    height: 21rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+#buscar-barbearias-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#recomendados {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 21rem;
+}
+
+.barbearia-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+}
+
+.barbearia-card {
+    width: 14rem;
+    height: 18.5rem;
+    border-radius: 16px;
+    background-color: #1A1B1F;
+    
+}
+
+.nota-barbearia {
+    position:absolute;
+    margin: 0.5rem;
+    width: 3.5rem;
+    height: 1.75rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+    background-color: #221c3dB3;
+}
+
+.nota-barbearia p {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 0.25rem;
+
+}
+.img-estrela {
+    height: 12px;
+}
+
+
+.barbearia-card-img {
+    width: 13.5rem;
+    height: 10.5rem;
+    border-radius: 16px;
+    margin: 0.25rem;
+}
+
+.barbearia-card h3 {
+    font-size: 16px;
+}
+
+.barbearia-card address {
+    font-size: 12px;
+    font-weight: 400;
+    color: 838896;
+    padding-bottom: 0.5rem;
+}
+
+.barbearia-content {
+    margin: 0.75rem;
 
 }
 
-/* #section2 {
-    height: 100%;
-} */
+.reservar-button {
+    width: 100%;
+    height: 2.25rem;
+    background-color: #26272B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+main {
+    margin-bottom: 65px;
+}
 
 footer {
     background-color: #1A1B1F;
@@ -24,8 +156,8 @@ footer {
     text-align: left;
     font-size: 14px;
     color: #6c757d;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-
+    height: 65px;
 }
