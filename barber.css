@@ -1,0 +1,63 @@
+body {
+    background-color: #141518;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+
+}
+
+.barbearia {
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.barber-image {
+    width: 40rem;
+
+}
+
+.servico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 22rem;
+    height: 10rem;
+    padding: 1rem;
+}
+
+.servico-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barber-adress-img {
+    width: 20rem;
+}
+
+.sobre {
+    width: 30%;
+    margin-right: 5rem;
+    margin: 3rem;
+    background-color: #1A1B1F;
+}
+
+.funcionamento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+}
+
+.parceria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
