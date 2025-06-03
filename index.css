@@ -234,13 +234,3 @@ body {
 .carousel-button.next {
     right: 10px;
 }
-
-footer {
-    background-color: #1A1B1F;
-    color: #838896;
-    padding: 20px;
-    text-align: left;
-    font-size: 14px;
-    height: 65px;
-    box-sizing: border-box;
-}

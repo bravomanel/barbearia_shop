@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     gap: 100px;
     padding: 30px 128px;
+    border-bottom: 1px solid gray;
 }
 
 .imagem-perfil {
@@ -65,4 +66,14 @@ a:visited {
     height: 16px;
     fill: currentColor;
     margin: 4px;
+}
+
+footer {
+    background-color: #1A1B1F;
+    color: #838896;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    height: 65px;
+    box-sizing: border-box;
 }
