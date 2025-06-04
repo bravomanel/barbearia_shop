@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>FSW BARBER</title>
 
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="barber.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/barber.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,69 +35,93 @@
         <section class="barbearia">
             <img src="images/fundo-barbearia.jpg" alt="Barbearia" class="barber-image">
             <h3>Vintage Barber</h3>
-            <address>Avenida São Sebastião, 357, São Paulo</address>
+            <address><img src="images/icons/pin.svg" alt=""> Avenida São Sebastião, 357, São Paulo</address>
 
-            <section>
-                <h3>SERVIÇOS</h3>
+            <section class="servicos">
+                <h4>SERVIÇOS</h4>
                 <div class="servico-container">
                     <article class="servico">
                         <img src="images/servicos/01.png" alt="Corte de cabelo" class="servico-img">
                         <div class="servico-info">
-                            <h4>Corte de Cabelo</h4>
-                            <p>Estilo personalizado com as últimas tendências</p>
-                            <p>R$ 50,00</p>
+                            <div class="servico-info-title">
+                                <h4>Corte de Cabelo</h4>
+                                <p>Estilo personalizado com as últimas tendências.</p>
+                            </div>
 
-                            <button type="button" class="reservar-button">Reservar</button>
+                            <footer>
+                                <p>R$ 50,00</p>
+                                <button type="button" class="reservar-button">Reservar</button>
+                            </footer>
                         </div>
                     </article>
                     <article class="servico">
                         <img src="images/servicos/02.png" alt="Corte de cabelo" class="servico-img">
                         <div class="servico-info">
-                            <h4>Corte de Cabelo</h4>
-                            <p>Estilo personalizado com as últimas tendências</p>
-                            <p>R$ 50,00</p>
+                            <div class="servico-info-title">
+                                <h4>Sombrancelha</h4>
+                                <p>Expressão acentuada com modelagem precisa.</p>
+                            </div>
 
-                            <button type="button" class="reservar-button">Reservar</button>
+                            <footer>
+                                <p>R$ 25,00</p>
+                                <button type="button" class="reservar-button">Reservar</button>
+                            </footer>
                         </div>
                     </article>
                     <article class="servico">
                         <img src="images/servicos/03.png" alt="Corte de cabelo" class="servico-img">
                         <div class="servico-info">
-                            <h4>Corte de Cabelo</h4>
-                            <p>Estilo personalizado com as últimas tendências</p>
-                            <p>R$ 50,00</p>
+                            <div class="servico-info-title">
+                                <h4>Barba</h4>
+                                <p>Modelagem completa para destacar sua masculinidade.</p>
+                            </div>
 
-                            <button type="button" class="reservar-button">Reservar</button>
+                            <footer>
+                                <p>R$ 45,00</p>
+                                <button type="button" class="reservar-button">Reservar</button>
+                            </footer>
                         </div>
                     </article>
                     <article class="servico">
                         <img src="images/servicos/04.png" alt="Corte de cabelo" class="servico-img">
                         <div class="servico-info">
-                            <h4>Corte de Cabelo</h4>
-                            <p>Estilo personalizado com as últimas tendências</p>
-                            <p>R$ 50,00</p>
+                            <div class="servico-info-title">
+                                <h4>Massagem</h4>
+                                <p>Relaxe e renove com nossos tratamentos revitalizantes.</p>
+                            </div>
 
-                            <button type="button" class="reservar-button">Reservar</button>
+                            <footer>
+                                <p>R$ 35,00</p>
+                                <button type="button" class="reservar-button">Reservar</button>
+                            </footer>
                         </div>
                     </article>
                     <article class="servico">
                         <img src="images/servicos/05.png" alt="Corte de cabelo" class="servico-img">
                         <div class="servico-info">
-                            <h4>Corte de Cabelo</h4>
-                            <p>Estilo personalizado com as últimas tendências</p>
-                            <p>R$ 50,00</p>
+                            <div class="servico-info-title">
+                                <h4>Pézinho</h4>
+                                <p>Acabamento perfeito para um visual renovado.</p>
+                            </div>
 
-                            <button type="button" class="reservar-button">Reservar</button>
+                            <footer>
+                                <p>R$ 20,00</p>
+                                <button type="button" class="reservar-button">Reservar</button>
+                            </footer>
                         </div>
                     </article>
                     <article class="servico">
                         <img src="images/servicos/06.png" alt="Corte de cabelo" class="servico-img">
                         <div class="servico-info">
-                            <h4>Corte de Cabelo</h4>
-                            <p>Estilo personalizado com as últimas tendências</p>
-                            <p>R$ 50,00</p>
+                            <div class="servico-info-title">
+                                <h4>Hidratação</h4>
+                                <p>Fios hidratados, macios e brilhantes.</p>
+                            </div>
 
-                            <button type="button" class="reservar-button">Reservar</button>
+                            <footer>
+                                <p>R$ 30,00</p>
+                                <button type="button" class="reservar-button">Reservar</button>
+                            </footer>
                         </div>
                     </article>
                 </div>
@@ -107,9 +131,8 @@
         <section class="sobre">
             <figure>
                 <img src="images/barber-adress.png" alt="Imagem de endereço da barbearia" class="barber-adress-img">
-                <figcaption>Avenida São Sebastião, 357, São Paulo</figcaption>
             </figure>
-            <div>
+            <div class="sobre-info">
                 <h4>SOBRE NÓS</h4>
                 <p>
                     Bem-vindo à Vintage Barber, onde tradição encontra estilo. Nossa equipe de mestres barbeiros
@@ -117,13 +140,19 @@
                     confiança, estilo e uma comunidade unida.
                 </p>
             </div>
-            <div>
-                <p>(11) 98204-5108</p>
-                <button>Copiar</button>
+            <div class="telefone">
+                <div class="telefone-container">
+                    <img src="images/icons/smartphone.svg" alt="">
+                    <p>(11) 98204-5108</p>
+                </div>
+                <button class="button">Copiar</button>
             </div>
-            <div>
-                <p>(11) 99503-2351</p>
-                <button>Copiar</button>
+            <div class="telefone">
+                <div class="telefone-container">
+                    <img src="images/icons/smartphone.svg" alt="">
+                    <p>(11) 99503-2351</p>
+                </div>
+                <button class="button">Copiar</button>
             </div>
             <div class="funcionamento">
                 <div class="funcionamento-dia">
@@ -137,11 +166,11 @@
                 </div>
                 <div class="funcionamento-horario">
                     <p>Fechado</p>
-                    <p>09:00-21:00</p>
-                    <p>09:00-21:00</p>
-                    <p>09:00-21:00</p>
-                    <p>09:00-21:00</p>
-                    <p>08:00-17:00</p>
+                    <p>09:00 - 21:00</p>
+                    <p>09:00 - 21:00</p>
+                    <p>09:00 - 21:00</p>
+                    <p>09:00 - 21:00</p>
+                    <p>08:00 - 17:00</p>
                     <p>Fechado</p>
                 </div>
             </div>
