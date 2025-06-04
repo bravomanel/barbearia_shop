@@ -93,8 +93,8 @@ body {
     overflow-x: auto;
     min-height: 18.5rem;
     width: 100%;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    /* scrollbar-width: none;
+    -ms-overflow-style: none; */
 }
 
 .barbearia-card-container::-webkit-scrollbar {

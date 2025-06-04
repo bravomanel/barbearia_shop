@@ -16,7 +16,16 @@ main {
 
 .barber-image {
     width: 40rem;
+}
 
+.servico-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .servico {
@@ -24,15 +33,22 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 22rem;
+    width: 18rem;
     height: 10rem;
     padding: 1rem;
 }
 
 .servico-info {
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: gray;
+}
+
+.servico-info h4 {
+    color: white;
+    margin-bottom: 0.5rem;
 }
 
 .barber-adress-img {
