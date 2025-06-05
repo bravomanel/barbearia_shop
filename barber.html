@@ -18,17 +18,38 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo FSW BARBER" class="logo-header">
+        <a href="index.html" class="logo-header">
+            <img src="images/logo.png" alt="Logo FSW BARBER" class="logo-header">
+        </a>
 
         <nav>
             <button id="button-horarios" class="header-button">
                 <img src="images/icons/calendar.svg" alt="Icone calendário" class="icon">
-                <a href="">Agendamentos</a>
+                <a href="agendamentos.html">Agendamentos</a>
             </button>
-            <button id="button-perfil" class="header-button">
-                <img src="images/user-img.png" alt="Foto de perfil" class="imagem-perfil">
-                <a href="">Miguel Silva Menezes</a>
-            </button>
+
+            <div class="button-perfil">
+                <label for="modal-sair" class="button-perfil">
+                    <img src="images/user-img.png" alt="Foto de perfil" class="imagem-perfil">
+                    Miguel Silva Menezes
+                </label>
+                <input type="checkbox" id="modal-sair" class="modal-checkbox-escondido">
+
+                <div class="modal-container">
+                    <div class="modal-conteudo">
+                        <h2>Sair</h2>
+                        <p>Deseja sair da plataforma ?</p>
+                        <footer class="modal-footer">
+                            <label for="modal-sair" class="modal-button">
+                                Cancelar
+                            </label>
+                            <a href="login.html" class="modal-button modal-button-sair">
+                                Sair
+                            </a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
