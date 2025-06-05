@@ -1,0 +1,177 @@
+
+aside {
+    height: 100%;
+    width: 30rem;
+    background-color: #141518;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+aside header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+/* Calendário */
+
+
+.calendario {
+    padding: 2rem;
+    border-bottom: 2px solid #26272B;
+}
+
+.mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.nav-setas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-setas button {
+    border: 2px solid #26272B;
+    cursor: pointer;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.tabela-calendario {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    table-layout: fixed;
+}
+
+.dia-semana,
+.outro-mes {
+    color: #838896;
+}
+
+.tabela-calendario th {
+    font-weight: 500;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tabela-calendario td {
+    text-align: center;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+    
+}
+
+.tabela-calendario .dia {
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+
+.tabela-calendario .dia.dia-selecionado {
+    background-color: #8162FF;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+/* Horários */
+
+.horarios {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-width: 0;
+    padding-left: 2rem;
+    margin-right: 7rem;
+    border-bottom: 2px solid #26272B;
+    padding: 1rem;
+    width: 100%;
+}
+
+.horario-button {
+    width: 100%;
+    height: 2.5rem;
+    padding: 1.25rem;
+
+    border: 1px solid #26272B;
+    color: #838896;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.horario-button-selected {
+    background-color: #8162FF;
+    color: white;
+}
+
+
+/* Resumo da Reserva */
+
+.reserva-resumo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2rem 1.5rem;
+    padding: 1rem;
+
+    background-color: #1A1B1F;
+    border-radius: 16px;
+    border: 2px solid #26272B;
+
+}
+
+.reserva-resumo-titulo {
+    color: #838896;
+    text-align: left;
+}
+
+.reserva-resumo-titulo h3 {
+    color: white;
+    font-size: 18px;
+}
+.reserva-resumo-titulo h3, 
+.reserva-resumo-titulo h4,
+.reserva-resumo-info p {
+    padding-bottom: 1rem;
+}
+
+.reserva-resumo-info p {
+    text-align: end;
+}
+
+
+/* Botão Confirmar */
+
+.aside-button {
+    width: calc(100% - 3rem);
+    height: 2.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem;
+
+    background-color: #8162FF;
+}
