@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FSW BARBER</title>
+
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/agendamentos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo FSW BARBER" class="logo-header">
+
+        <nav>
+            <button id="button-horarios" class="header-button">
+                <img src="images/icons/calendar.svg" alt="Icone calendário" class="icon">
+                <a href="">Agendamentos</a>
+            </button>
+            <button id="button-perfil" class="header-button">
+                <img src="images/user-img.png" alt="Foto de perfil" class="imagem-perfil">
+                <a href="">Miguel Silva Menezes</a>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="agendamentos">
+            <h2>Agendamentos</h2>
+
+            <section class="agendamentos-confirmados">
+                <h3>CONFIRMADOS</h4>
+                    <article class="agendamento">
+                        <div class="agendamento-info">
+                            <span class="status status-confirmado">Confirmado</span>
+                            <div class="agendamento-titulo">
+                                <h4>Corte de Cabelo</h4>
+                                <p><img src="images/fundo-barbearia-low.png" class="barbearia-icone" alt="">Vintage
+                                    Barber</p>
+                            </div>
+                        </div>
+                        <div class="agendamento-data">
+                            <span class="mes">Fevereiro</span>
+                            <span class="dia">06</span>
+                            <span class="hora">09:45</span>
+                        </div>
+                    </article>
+            </section>
+            <section class="agendamentos-finalizados">
+                <h3>FINALIZADOS</h3>
+                <article class="agendamento">
+                    <div class="agendamento-info">
+                        <span class="status status-finalizado">Finalizado</span>
+                        <div class="agendamento-titulo">
+                            <h4>Corte de Cabelo</h4>
+                            <p><img src="images/fundo-barbearia-low.png" class="barbearia-icone" alt="">Vintage Barber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="agendamento-data">
+                        <span class="mes">Fevereiro</span>
+                        <span class="dia">22</span>
+                        <span class="hora">09:00</span>
+                    </div>
+                </article>
+                <article class="agendamento">
+                    <div class="agendamento-info">
+                        <span class="status status-finalizado">Finalizado</span>
+                        <div class="agendamento-titulo">
+                            <h4>Corte de Cabelo</h4>
+                            <p><img src="images/fundo-barbearia-low.png" class="barbearia-icone" alt="">Vintage Barber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="agendamento-data">
+                        <span class="mes">Janeiro</span>
+                        <span class="dia">07</span>
+                        <span class="hora">12:40</span>
+                    </div>
+                </article>
+                <article class="agendamento">
+                    <div class="agendamento-info">
+                        <span class="status status-finalizado">Finalizado</span>
+                        <div class="agendamento-titulo">
+                            <h4>Corte de Cabelo</h4>
+                            <p><img src="images/fundo-barbearia-low.png" class="barbearia-icone" alt="">Vintage Barber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="agendamento-data">
+                        <span class="mes">Dezembro</span>
+                        <span class="dia">23</span>
+                        <span class="hora">19:10</span>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="sobre">
+            <figure>
+                <img src="images/barber-adress.png" alt="Imagem de endereço da barbearia" class="barber-adress-img">
+            </figure>
+            <div class="sobre-info">
+                <h4>SOBRE NÓS</h4>
+                <p>
+                    Bem-vindo à Vintage Barber, onde tradição encontra estilo. Nossa equipe de mestres barbeiros
+                    transforma cortes de cabelo e barbas em obras de arte. Em um ambiente acolhedor, promovemos
+                    confiança, estilo e uma comunidade unida.
+                </p>
+            </div>
+            <div class="telefone">
+                <div class="telefone-container">
+                    <img src="images/icons/smartphone.svg" alt="">
+                    <p>(11) 98204-5108</p>
+                </div>
+                <button class="button">Copiar</button>
+            </div>
+            <div class="telefone">
+                <div class="telefone-container">
+                    <img src="images/icons/smartphone.svg" alt="">
+                    <p>(11) 99503-2351</p>
+                </div>
+                <button class="button">Copiar</button>
+            </div>
+
+
+            <p class="status status-confirmado">Confirmado</p>
+            <div class="reserva-resumo">
+                <div class="reserva-resumo-titulo">
+                    <h3>Corte de cabelo</h3>
+                    <h4>Data</h4>
+                    <h4>Horário</h4>
+                    <h4>Barbearia</h4>
+                </div>
+                <div class="reserva-resumo-info">
+                    <p>R$ 50,00</p>
+                    <p>22 de Julho</p>
+                    <p>09:45</p>
+                    <p>Vintage Barber</p>
+                </div>
+            </div>
+
+            <button class="cancelar-reserva">Cancelar Reserva</button>
+        </section>
+    </main>
+
+    <footer>
+        © 2023 Copyright FSW Barber
+    </footer>
+</body>
