@@ -1,14 +1,14 @@
-
 aside {
     height: 100%;
     width: 30rem;
     background-color: #141518;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -30rem;
     overflow-y: auto;
     overflow-x: hidden;
-
+    z-index: 1000;
+    transition: right 0.4s ease-in-out;
 }
 
 aside header {
@@ -21,8 +21,51 @@ aside header {
     margin: 0;
 }
 
-/* Calendário */
 
+/* Toggle aside */
+
+.toggle-aside-checkbox {
+    display: none;
+}
+
+.reservar-button,
+.botao-fechar-aside {
+    cursor: pointer;
+    user-select: none;
+}
+
+.botao-fechar-aside {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+
+.botao-fechar-aside img {
+    display: block;
+}
+
+.toggle-aside-checkbox:checked ~ aside {
+    right: 0;
+}
+
+.overlay-para-fechar-aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.toggle-aside-checkbox:checked ~ .overlay-para-fechar-aside {
+    display: block;
+}
+
+
+/* Calendário */
 
 .calendario {
     padding: 2rem;
@@ -95,6 +138,7 @@ aside header {
     color: #FFFFFF;
     font-weight: 700;
 }
+
 
 /* Horários */
 
