@@ -23,12 +23,13 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     height: 27rem;
     padding: 0 2rem;
     overflow: hidden;
     margin-bottom: 2rem;
+    gap: 4rem;
 }
 
 #card-usuario {
@@ -163,6 +164,7 @@ body {
     flex-direction: column;
     flex: 1;
     min-width: 0;
+    max-width: 45rem;
     padding-left: 2rem;
     margin-right: 7rem;
 }

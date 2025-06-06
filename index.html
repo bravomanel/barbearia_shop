@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-        
+
 </head>
 
 <body>
@@ -98,9 +98,9 @@
                     <h2>RECOMENDADOS</h2>
 
                     <div class="carousel-controls-wrapper">
-                        <button class="carousel-button prev" aria-label="Anterior">&lt;</button>
+                        <a href="#card1" class="carousel-button prev" aria-label="Anterior">&lt;</a>
                         <div class="barbearia-card-container">
-                            <article class="barbearia-card">
+                            <article class="barbearia-card" id="card1">
                                 <div class="nota-barbearia">
                                     <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                     <p>5,0</p>
@@ -118,7 +118,7 @@
                                 </div>
                             </article>
 
-                            <article class="barbearia-card">
+                            <article class="barbearia-card" id="card2">
                                 <div class="nota-barbearia">
                                     <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                     <p>5,0</p>
@@ -136,7 +136,7 @@
                                 </div>
                             </article>
 
-                            <article class="barbearia-card">
+                            <article class="barbearia-card" id="card3">
                                 <div class="nota-barbearia">
                                     <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                     <p>5,0</p>
@@ -154,7 +154,7 @@
                                 </div>
                             </article>
 
-                            <article class="barbearia-card">
+                            <article class="barbearia-card" id="card4">
                                 <div class="nota-barbearia">
                                     <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                     <p>5,0</p>
@@ -172,7 +172,7 @@
                                 </div>
                             </article>
 
-                            <article class="barbearia-card">
+                            <article class="barbearia-card" id="card5">
                                 <div class="nota-barbearia">
                                     <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                     <p>5,0</p>
@@ -189,26 +189,8 @@
                                     <label for="toggle-aside" class="reservar-button">Reservar</label>
                                 </div>
                             </article>
-
-                            <article class="barbearia-card">
-                                <div class="nota-barbearia">
-                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
-                                    <p>5,0</p>
-                                </div>
-                                <figure>
-                                    <a href="barber.html">
-                                        <img src="images/barbearias/05.png" alt="Foto de Barbearia"
-                                            class="barbearia-card-img">
-                                    </a>
-                                </figure>
-                                <div class="barbearia-content">
-                                    <h3>Clássica Cortez</h3>
-                                    <address>Avenida São Sebastião, 357, São Paulo</address>
-                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
-                                </div>
-                            </article>
                         </div>
-                        <button class="carousel-button next" aria-label="Próximo">&gt;</button>
+                        <a href="#card5" class="carousel-button next" aria-label="Próximo">&gt;</a>
                     </div>
                 </section>
             </section>
@@ -216,9 +198,27 @@
             <section id="mais-visitados" class="barbearia-card-section">
                 <h2>Mais Visitados</h2>
                 <div class="carousel-controls-wrapper">
-                    <button class="carousel-button prev" aria-label="Anterior">&lt;</button>
+                    <a href="#card6" class="carousel-button prev" aria-label="Anterior">&lt;</a>
                     <div class="barbearia-card-container">
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card6">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/05.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+                        
+                        <article class="barbearia-card" id="card7">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -236,7 +236,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card8">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -254,7 +254,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card9">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -272,7 +272,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card10">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -290,7 +290,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card11">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -308,7 +308,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card12">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -326,7 +326,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card13">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -344,16 +344,17 @@
                             </div>
                         </article>
                     </div>
-                    <button class="carousel-button next" aria-label="Próximo">&gt;</button>
+
+                    <a href="#card13" class="carousel-button next" aria-label="Próximo">&gt;</a>
                 </div>
 
             </section>
             <section id="populares" class="barbearia-card-section">
                 <h2>Populares</h2>
                 <div class="carousel-controls-wrapper">
-                    <button class="carousel-button prev" aria-label="Anterior">&lt;</button>
+                    <a href="#card14" class="carousel-button prev" aria-label="Anterior">&lt;</a>
                     <div class="barbearia-card-container">
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card14">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -371,7 +372,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card15">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -389,7 +390,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card16">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -407,7 +408,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card17">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -425,7 +426,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card18">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -443,7 +444,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card19">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -461,7 +462,7 @@
                             </div>
                         </article>
 
-                        <article class="barbearia-card">
+                        <article class="barbearia-card" id="card20">
                             <div class="nota-barbearia">
                                 <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
                                 <p>5,0</p>
@@ -479,8 +480,7 @@
                             </div>
                         </article>
                     </div>
-
-                    <button class="carousel-button next" aria-label="Próximo">&gt;</button>
+                    <a href="#card20" class="carousel-button next" aria-label="Próximo">&gt;</a>
                 </div>
 
             </section>
@@ -501,7 +501,7 @@
         </header>
 
         <div class="calendario">
-             <div class="mes">
+            <div class="mes">
                 <p class="current-month">Fevereiro</p>
                 <div class="nav-setas">
                     <button><img src="images/icons/chevron-left.svg" alt=""></button>
@@ -602,4 +602,5 @@
     </aside>
 
 </body>
+
 </html>
