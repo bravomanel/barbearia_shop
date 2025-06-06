@@ -23,8 +23,8 @@
     <label for="toggle-aside" class="overlay-para-fechar-aside"></label>
 
     <div class="wrapper">
-        <header>
-            <a href="index.html" class="logo-header">
+        <header id="header">
+            <a href="#header" class="logo-header">
                 <img src="images/logo.png" alt="Logo FSW BARBER" class="logo-header">
             </a>
 
@@ -522,49 +522,154 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><button class="dia outro-mes">28</button></td>
-                        <td><button class="dia outro-mes">29</button></td>
-                        <td><button class="dia outro-mes">30</button></td>
-                        <td><button class="dia outro-mes">31</button></td>
-                        <td><button class="dia">1</button></td>
-                        <td><button class="dia">2</button></td>
-                        <td><button class="dia">3</button></td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-28" class="radio-dia-invisivel">
+                            <label for="dia-outro-28" class="label-dia outro-mes">28</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-29" class="radio-dia-invisivel">
+                            <label for="dia-outro-29" class="label-dia outro-mes">29</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-30" class="radio-dia-invisivel">
+                            <label for="dia-outro-30" class="label-dia outro-mes">30</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-31" class="radio-dia-invisivel">
+                            <label for="dia-outro-31" class="label-dia outro-mes">31</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia1" class="radio-dia-invisivel">
+                            <label for="dia1" class="label-dia">1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia2" class="radio-dia-invisivel">
+                            <label for="dia2" class="label-dia">2</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia3" class="radio-dia-invisivel">
+                            <label for="dia3" class="label-dia">3</label>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button class="dia">4</button></td>
-                        <td><button class="dia">5</button></td>
-                        <td><button class="dia dia-selecionado">6</button></td>
-                        <td><button class="dia">7</button></td>
-                        <td><button class="dia">8</button></td>
-                        <td><button class="dia">9</button></td>
-                        <td><button class="dia">10</button></td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia4" class="radio-dia-invisivel">
+                            <label for="dia4" class="label-dia">4</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia5" class="radio-dia-invisivel">
+                            <label for="dia5" class="label-dia">5</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia6" class="radio-dia-invisivel" checked>
+                            <label for="dia6" class="label-dia">6</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia7" class="radio-dia-invisivel">
+                            <label for="dia7" class="label-dia">7</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia8" class="radio-dia-invisivel">
+                            <label for="dia8" class="label-dia">8</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia9" class="radio-dia-invisivel">
+                            <label for="dia9" class="label-dia">9</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia10" class="radio-dia-invisivel">
+                            <label for="dia10" class="label-dia">10</label>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button class="dia">11</button></td>
-                        <td><button class="dia">12</button></td>
-                        <td><button class="dia">13</button></td>
-                        <td><button class="dia">14</button></td>
-                        <td><button class="dia">15</button></td>
-                        <td><button class="dia">16</button></td>
-                        <td><button class="dia">17</button></td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia11" class="radio-dia-invisivel">
+                            <label for="dia11" class="label-dia">11</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia12" class="radio-dia-invisivel">
+                            <label for="dia12" class="label-dia">12</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia13" class="radio-dia-invisivel">
+                            <label for="dia13" class="label-dia">13</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia14" class="radio-dia-invisivel">
+                            <label for="dia14" class="label-dia">14</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia15" class="radio-dia-invisivel">
+                            <label for="dia15" class="label-dia">15</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia16" class="radio-dia-invisivel">
+                            <label for="dia16" class="label-dia">16</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia17" class="radio-dia-invisivel">
+                            <label for="dia17" class="label-dia">17</label>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button class="dia">18</button></td>
-                        <td><button class="dia">19</button></td>
-                        <td><button class="dia">20</button></td>
-                        <td><button class="dia">21</button></td>
-                        <td><button class="dia">22</button></td>
-                        <td><button class="dia">23</button></td>
-                        <td><button class="dia">24</button></td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia18" class="radio-dia-invisivel">
+                            <label for="dia18" class="label-dia">18</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia19" class="radio-dia-invisivel">
+                            <label for="dia19" class="label-dia">19</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia20" class="radio-dia-invisivel">
+                            <label for="dia20" class="label-dia">20</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia21" class="radio-dia-invisivel">
+                            <label for="dia21" class="label-dia">21</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia22" class="radio-dia-invisivel">
+                            <label for="dia22" class="label-dia">22</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia23" class="radio-dia-invisivel">
+                            <label for="dia23" class="label-dia">23</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia24" class="radio-dia-invisivel">
+                            <label for="dia24" class="label-dia">24</label>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button class="dia">25</button></td>
-                        <td><button class="dia">26</button></td>
-                        <td><button class="dia">27</button></td>
-                        <td><button class="dia">28</button></td>
-                        <td><button class="dia">29</button></td>
-                        <td><button class="dia outro-mes">1</button></td>
-                        <td><button class="dia outro-mes">2</button></td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia25" class="radio-dia-invisivel">
+                            <label for="dia25" class="label-dia">25</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia26" class="radio-dia-invisivel">
+                            <label for="dia26" class="label-dia">26</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia27" class="radio-dia-invisivel">
+                            <label for="dia27" class="label-dia">27</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia28" class="radio-dia-invisivel">
+                            <label for="dia28" class="label-dia">28</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia29" class="radio-dia-invisivel">
+                            <label for="dia29" class="label-dia">29</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-1" class="radio-dia-invisivel">
+                            <label for="dia-outro-1" class="label-dia outro-mes">1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-2" class="radio-dia-invisivel">
+                            <label for="dia-outro-2" class="label-dia outro-mes">2</label>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -572,11 +677,20 @@
 
 
         <div class="horarios">
-            <button type="button" class="horario-button">09:00</button>
-            <button type="button" class="horario-button horario-button-selected">09:45</button>
-            <button type="button" class="horario-button">10:30</button>
-            <button type="button" class="horario-button">11:15</button>
-            <button type="button" class="horario-button">12:00</button>
+            <input type="radio" name="horario-disponivel" id="horario-0900" class="radio-horario-invisivel">
+            <label for="horario-0900" class="horario-label">09:00</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-0945" class="radio-horario-invisivel" checked>
+            <label for="horario-0945" class="horario-label">09:45</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-1030" class="radio-horario-invisivel">
+            <label for="horario-1030" class="horario-label">10:30</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-1115" class="radio-horario-invisivel">
+            <label for="horario-1115" class="horario-label">11:15</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-1200" class="radio-horario-invisivel">
+            <label for="horario-1200" class="horario-label">12:00</label>
         </div>
 
         <div class="reserva-resumo">
