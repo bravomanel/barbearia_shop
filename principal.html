@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>FSW BARBER</title>
+
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/aside.css">
+    <link rel="stylesheet" href="style/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <input type="checkbox" id="toggle-aside" class="toggle-aside-checkbox">
+
+    <label for="toggle-aside" class="overlay-para-fechar-aside"></label>
+
+    <div class="wrapper">
+        <header id="header">
+            <a href="#header" class="logo-header">
+                <img src="images/logo.png" alt="Logo FSW BARBER" class="logo-header">
+            </a>
+
+            <nav>
+                <button id="button-horarios" class="header-button">
+                    <img src="images/icons/calendar.svg" alt="Icone calendário" class="icon">
+                    <a href="agendamentos.html">Agendamentos</a>
+                </button>
+
+                <div class="button-perfil">
+                    <label for="modal-sair" class="button-perfil">
+                        <img src="images/user-img.png" alt="Foto de perfil" class="imagem-perfil">
+                        Miguel Silva Menezes
+                    </label>
+                    <input type="checkbox" id="modal-sair" class="modal-checkbox-escondido">
+
+                    <div class="modal-container">
+                        <div class="modal-conteudo">
+                            <h2>Sair</h2>
+                            <p>Deseja sair da plataforma ?</p>
+                            <footer class="modal-footer">
+                                <label for="modal-sair" class="modal-button">
+                                    Cancelar
+                                </label>
+                                <a href="index.html" class="modal-button modal-button-sair">
+                                    Sair
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <section id="section-principal">
+                <div class="background-image"></div>
+                <section id="card-usuario">
+                    <div class="text-content">
+                        <h2>Olá, Miguel!</h2>
+                        <time>Sexta, 2 de Fevereiro</time>
+                    </div>
+
+                    <div id="buscar-barbearias-container">
+                        <input type="text" placeholder="Buscar Barbearias">
+                        <button type="button">
+                            <img src="images/icons/search.svg" alt="Procurar" class="icon">
+                        </button>
+                    </div>
+
+                    <div id="agendamentos-principal">
+                        <h3>AGENDAMENTOS</h3>
+                    </div>
+                    <article class="agendamento">
+                        <div class="agendamento-info">
+                            <span class="status-confirmado">Confirmado</span>
+                            <h4>Corte de Cabelo</h4>
+                            <p><img src="images/fundo-barbearia-low.png" class="barbearia-icone" alt="">Vintage Barber
+                            </p>
+                        </div>
+                        <div class="agendamento-data">
+                            <span class="mes">Fevereiro</span>
+                            <span class="dia">06</span>
+                            <span class="hora">09:45</span>
+                        </div>
+                    </article>
+
+                </section>
+
+                <section id="recomendados">
+                    <h2>RECOMENDADOS</h2>
+
+                    <div class="carousel-wrapper">
+
+                        <input type="radio" name="slider-rec" id="rec-slide1" checked>
+                        <input type="radio" name="slider-rec" id="rec-slide2">
+                        <input type="radio" name="slider-rec" id="rec-slide3">
+
+                        <div class="carousel">
+                            <article class="barbearia-card" id="card1">
+                                <div class="nota-barbearia">
+                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                    <p>5,0</p>
+                                </div>
+                                <figure>
+                                    <a href="barber.html">
+                                        <img src="images/barbearias/20.png" alt="Foto de Barbearia"
+                                            class="barbearia-card-img">
+                                    </a>
+                                </figure>
+                                <div class="barbearia-content">
+                                    <h3>Vintage Barber</h3>
+                                    <address>Avenida São Sebastião, 357, São Paulo</address>
+                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
+                                </div>
+                            </article>
+
+                            <article class="barbearia-card" id="card2">
+                                <div class="nota-barbearia">
+                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                    <p>5,0</p>
+                                </div>
+                                <figure>
+                                    <a href="barber.html">
+                                        <img src="images/barbearias/01.png" alt="Foto de Barbearia"
+                                            class="barbearia-card-img">
+                                    </a>
+                                </figure>
+                                <div class="barbearia-content">
+                                    <h3>Homem Elegante</h3>
+                                    <address>Avenida São Sebastião, 357, São Paulo</address>
+                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
+                                </div>
+                            </article>
+
+                            <article class="barbearia-card" id="card3">
+                                <div class="nota-barbearia">
+                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                    <p>5,0</p>
+                                </div>
+                                <figure>
+                                    <a href="barber.html">
+                                        <img src="images/barbearias/02.png" alt="Foto de Barbearia"
+                                            class="barbearia-card-img">
+                                    </a>
+                                </figure>
+                                <div class="barbearia-content">
+                                    <h3>Clássica Cortez</h3>
+                                    <address>Avenida São Sebastião, 357, São Paulo</address>
+                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
+                                </div>
+                            </article>
+
+                            <article class="barbearia-card" id="card4">
+                                <div class="nota-barbearia">
+                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                    <p>5,0</p>
+                                </div>
+                                <figure>
+                                    <a href="barber.html">
+                                        <img src="images/barbearias/03.png" alt="Foto de Barbearia"
+                                            class="barbearia-card-img">
+                                    </a>
+                                </figure>
+                                <div class="barbearia-content">
+                                    <h3>Clássica Cortez</h3>
+                                    <address>Avenida São Sebastião, 357, São Paulo</address>
+                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
+                                </div>
+                            </article>
+
+                            <article class="barbearia-card" id="card5">
+                                <div class="nota-barbearia">
+                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                    <p>5,0</p>
+                                </div>
+                                <figure>
+                                    <a href="barber.html">
+                                        <img src="images/barbearias/04.png" alt="Foto de Barbearia"
+                                            class="barbearia-card-img">
+                                    </a>
+                                </figure>
+                                <div class="barbearia-content">
+                                    <h3>Clássica Cortez</h3>
+                                    <address>Avenida São Sebastião, 357, São Paulo</address>
+                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
+                                </div>
+                            </article>
+
+                            <article class="barbearia-card" id="card6">
+                                <div class="nota-barbearia">
+                                    <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                    <p>5,0</p>
+                                </div>
+                                <figure>
+                                    <a href="barber.html">
+                                        <img src="images/barbearias/05.png" alt="Foto de Barbearia"
+                                            class="barbearia-card-img">
+                                    </a>
+                                </figure>
+                                <div class="barbearia-content">
+                                    <h3>Clássica Cortez</h3>
+                                    <address>Avenida São Sebastião, 357, São Paulo</address>
+                                    <label for="toggle-aside" class="reservar-button">Reservar</label>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <label for="rec-slide2" class="nav-btn next" id="next1-rec"></label>
+
+                            <label for="rec-slide1" class="nav-btn prev" id="prev2-rec"></label>
+                            <label for="rec-slide3" class="nav-btn next" id="next2-rec"></label>
+
+                            <label for="rec-slide2" class="nav-btn prev" id="prev3-rec"></label>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            <section id="mais-visitados" class="barbearia-card-section">
+                <h2>Mais Visitados</h2>
+                <div class="carousel-wrapper">
+
+                    <input type="radio" name="slider-mv" id="mv-slide1" checked>
+                    <input type="radio" name="slider-mv" id="mv-slide2">
+                    <input type="radio" name="slider-mv" id="mv-slide3">
+
+                    <div class="carousel">
+
+                        <article class="barbearia-card" id="card7">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/06.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Vintage Barber</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card8">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/07.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Homem Elegante</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card9">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/08.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card10">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/09.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card11">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/10.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card12">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/11.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card13">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/12.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card1">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/20.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Vintage Barber</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card2">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/01.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Homem Elegante</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="carousel-navigation">
+                        <label for="mv-slide2" class="nav-btn next" id="next1-mv"></label>
+
+                        <label for="mv-slide1" class="nav-btn prev" id="prev2-mv"></label>
+                        <label for="mv-slide3" class="nav-btn next" id="next2-mv"></label>
+
+                        <label for="mv-slide2" class="nav-btn prev" id="prev3-mv"></label>
+                    </div>
+                </div>
+
+            </section>
+            <section id="populares" class="barbearia-card-section">
+                <h2>Populares</h2>
+                <div class="carousel-wrapper">
+
+                    <input type="radio" name="slider-pop" id="pop-slide1" checked>
+                    <input type="radio" name="slider-pop" id="pop-slide2">
+                    <input type="radio" name="slider-pop" id="pop-slide3">
+
+                    <div class="carousel">
+                        <article class="barbearia-card" id="card14">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/13.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Vintage Barber</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card15">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/14.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Homem Elegante</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card16">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/15.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card17">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/16.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card18">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/17.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card19">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/18.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card20">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/19.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card3">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/02.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                        <article class="barbearia-card" id="card4">
+                            <div class="nota-barbearia">
+                                <img src="images/icons/star.svg" alt="Estrela" class="img-estrela">
+                                <p>5,0</p>
+                            </div>
+                            <figure>
+                                <a href="barber.html">
+                                    <img src="images/barbearias/03.png" alt="Foto de Barbearia"
+                                        class="barbearia-card-img">
+                                </a>
+                            </figure>
+                            <div class="barbearia-content">
+                                <h3>Clássica Cortez</h3>
+                                <address>Avenida São Sebastião, 357, São Paulo</address>
+                                <label for="toggle-aside" class="reservar-button">Reservar</label>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="carousel-navigation">
+                        <label for="pop-slide2" class="nav-btn next" id="next1-pop"></label>
+
+                        <label for="pop-slide1" class="nav-btn prev" id="prev2-pop"></label>
+                        <label for="pop-slide3" class="nav-btn next" id="next2-pop"></label>
+
+                        <label for="pop-slide2" class="nav-btn prev" id="prev3-pop"></label>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            © 2023 Copyright FSW Barber
+        </footer>
+    </div>
+
+    <aside>
+        <header>
+            <h2>Fazer Reserva</h2>
+            <label for="toggle-aside" class="botao-fechar-aside">
+                <img src="images/icons/close.svg" alt="Fechar Aside">
+            </label>
+        </header>
+
+        <div class="calendario">
+            <div class="mes">
+                <p class="current-month">Fevereiro</p>
+                <div class="nav-setas">
+                    <button><img src="images/icons/chevron-left.svg" alt=""></button>
+                    <button><img src="images/icons/chevron-right.svg" alt=""></button>
+                </div>
+            </div>
+            <table class="tabela-calendario">
+                <thead>
+                    <tr>
+                        <th class="dia-semana">Su</th>
+                        <th class="dia-semana">Mo</th>
+                        <th class="dia-semana">Tu</th>
+                        <th class="dia-semana">We</th>
+                        <th class="dia-semana">Th</th>
+                        <th class="dia-semana">Fr</th>
+                        <th class="dia-semana">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-28" class="radio-dia-invisivel">
+                            <label for="dia-outro-28" class="label-dia outro-mes">28</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-29" class="radio-dia-invisivel">
+                            <label for="dia-outro-29" class="label-dia outro-mes">29</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-30" class="radio-dia-invisivel">
+                            <label for="dia-outro-30" class="label-dia outro-mes">30</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-31" class="radio-dia-invisivel">
+                            <label for="dia-outro-31" class="label-dia outro-mes">31</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia1" class="radio-dia-invisivel">
+                            <label for="dia1" class="label-dia">1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia2" class="radio-dia-invisivel">
+                            <label for="dia2" class="label-dia">2</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia3" class="radio-dia-invisivel">
+                            <label for="dia3" class="label-dia">3</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia4" class="radio-dia-invisivel">
+                            <label for="dia4" class="label-dia">4</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia5" class="radio-dia-invisivel">
+                            <label for="dia5" class="label-dia">5</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia6" class="radio-dia-invisivel" checked>
+                            <label for="dia6" class="label-dia">6</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia7" class="radio-dia-invisivel">
+                            <label for="dia7" class="label-dia">7</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia8" class="radio-dia-invisivel">
+                            <label for="dia8" class="label-dia">8</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia9" class="radio-dia-invisivel">
+                            <label for="dia9" class="label-dia">9</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia10" class="radio-dia-invisivel">
+                            <label for="dia10" class="label-dia">10</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia11" class="radio-dia-invisivel">
+                            <label for="dia11" class="label-dia">11</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia12" class="radio-dia-invisivel">
+                            <label for="dia12" class="label-dia">12</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia13" class="radio-dia-invisivel">
+                            <label for="dia13" class="label-dia">13</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia14" class="radio-dia-invisivel">
+                            <label for="dia14" class="label-dia">14</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia15" class="radio-dia-invisivel">
+                            <label for="dia15" class="label-dia">15</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia16" class="radio-dia-invisivel">
+                            <label for="dia16" class="label-dia">16</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia17" class="radio-dia-invisivel">
+                            <label for="dia17" class="label-dia">17</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia18" class="radio-dia-invisivel">
+                            <label for="dia18" class="label-dia">18</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia19" class="radio-dia-invisivel">
+                            <label for="dia19" class="label-dia">19</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia20" class="radio-dia-invisivel">
+                            <label for="dia20" class="label-dia">20</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia21" class="radio-dia-invisivel">
+                            <label for="dia21" class="label-dia">21</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia22" class="radio-dia-invisivel">
+                            <label for="dia22" class="label-dia">22</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia23" class="radio-dia-invisivel">
+                            <label for="dia23" class="label-dia">23</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia24" class="radio-dia-invisivel">
+                            <label for="dia24" class="label-dia">24</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia25" class="radio-dia-invisivel">
+                            <label for="dia25" class="label-dia">25</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia26" class="radio-dia-invisivel">
+                            <label for="dia26" class="label-dia">26</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia27" class="radio-dia-invisivel">
+                            <label for="dia27" class="label-dia">27</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia28" class="radio-dia-invisivel">
+                            <label for="dia28" class="label-dia">28</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia29" class="radio-dia-invisivel">
+                            <label for="dia29" class="label-dia">29</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-1" class="radio-dia-invisivel">
+                            <label for="dia-outro-1" class="label-dia outro-mes">1</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="dia-calendario" id="dia-outro-2" class="radio-dia-invisivel">
+                            <label for="dia-outro-2" class="label-dia outro-mes">2</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="horarios">
+            <input type="radio" name="horario-disponivel" id="horario-0900" class="radio-horario-invisivel">
+            <label for="horario-0900" class="horario-label">09:00</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-0945" class="radio-horario-invisivel" checked>
+            <label for="horario-0945" class="horario-label">09:45</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-1030" class="radio-horario-invisivel">
+            <label for="horario-1030" class="horario-label">10:30</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-1115" class="radio-horario-invisivel">
+            <label for="horario-1115" class="horario-label">11:15</label>
+
+            <input type="radio" name="horario-disponivel" id="horario-1200" class="radio-horario-invisivel">
+            <label for="horario-1200" class="horario-label">12:00</label>
+        </div>
+
+        <div class="reserva-resumo">
+            <div class="reserva-resumo-titulo">
+                <h3>Corte de cabelo</h3>
+                <h4>Data</h4>
+                <h4>Horário</h4>
+                <h4>Barbearia</h4>
+            </div>
+            <div class="reserva-resumo-info">
+                <p>R$ 50,00</p>
+                <p>06 de Fevereiro</p>
+                <p>09:45</p>
+                <p>Vintage Barber</p>
+            </div>
+        </div>
+
+        <button type="button" class="aside-button">
+            <a href="agendamentos.html" class="aside-button-link">
+                Confirmar
+            </a>
+        </button>
+    </aside>
+
+</body>
+
+</html>
