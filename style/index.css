@@ -179,7 +179,7 @@ body {
 .carousel-wrapper {
     position: relative;
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     overflow: hidden;
     border-radius: 16px;
 }
@@ -225,7 +225,8 @@ body {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #141518;
+    border: 2px solid #4E525B;
     border-radius: 50%;
     cursor: pointer;
     display: none;
@@ -242,26 +243,18 @@ body {
     border-right: 3px solid white;
 }
 .nav-btn.prev {
-    left: 20px;
+    left: -0px;
 }
 .nav-btn.prev::after {
-    transform: translate(-50%, -50%) rotate(-135deg);
+    transform: translate(-35%, -50%) rotate(-135deg);
 }
 .nav-btn.next {
-    right: 20px;
+    right: -0px;
 }
 .nav-btn.next::after {
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-65%, -50%) rotate(45deg);
 }
 
-/* #slide1:checked ~ .carousel-navigation #next1 { display: block; }
-
-#slide2:checked ~ .carousel-navigation #prev2 { display: block; }
-#slide2:checked ~ .carousel-navigation #next2 { display: block; }
-
-#slide3:checked ~ .carousel-navigation #prev3 { display: block; } */
-
-/* Regras para o carrossel RECOMENDADOS */
 #recomendados #rec-slide1:checked ~ .carousel { transform: translateX(0%); }
 #recomendados #rec-slide2:checked ~ .carousel { transform: translateX(-33.333%); }
 #recomendados #rec-slide3:checked ~ .carousel { transform: translateX(-66.666%); }
@@ -272,7 +265,6 @@ body {
 #recomendados #rec-slide3:checked ~ .carousel-navigation .prev[for="rec-slide2"] { display: block; }
 
 
-/* Regras para o carrossel MAIS VISITADOS */
 #mais-visitados #mv-slide1:checked ~ .carousel { transform: translateX(0%); }
 #mais-visitados #mv-slide2:checked ~ .carousel { transform: translateX(-50%); }
 
@@ -280,7 +272,6 @@ body {
 #mais-visitados #mv-slide2:checked ~ .carousel-navigation .prev[for="mv-slide1"] { display: block; }
 
 
-/* Regras para o carrossel POPULARES */
 #populares #pop-slide1:checked ~ .carousel { transform: translateX(0%); }
 #populares #pop-slide2:checked ~ .carousel { transform: translateX(-50%); }
 
