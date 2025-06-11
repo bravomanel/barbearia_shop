@@ -175,30 +175,125 @@ body {
     margin-bottom: 1rem;
 }
 
-.carousel-controls-wrapper {
+
+.carousel-wrapper {
     position: relative;
-}
-
-.barbearia-card-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 2rem;
-    overflow-x: auto;
-    min-height: 18.5rem;
     width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 16px;
 }
 
-.barbearia-card-container::-webkit-scrollbar {
+.carousel {
+    display: flex;
+    gap: 2rem;
+    min-height: 18.5rem;
+    width: 325%; 
+    transition: transform 0.5s ease-in-out;
+}
+
+#recomendados .carousel-wrapper {
+    max-width: 480px;
+}
+
+#mais-visitados .carousel,
+#populares .carousel {
+    width: 200%;
+}
+
+.carousel::-webkit-scrollbar {
     display: none;
 }
+
+.carousel-wrapper > input {
+    display: none;
+}
+
+#slide1:checked ~ .carousel {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .carousel {
+    transform: translateX(-33.333%);
+}
+#slide3:checked ~ .carousel {
+    transform: translateX(-66.666%);
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+}
+.nav-btn.prev {
+    left: 20px;
+}
+.nav-btn.prev::after {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+.nav-btn.next {
+    right: 20px;
+}
+.nav-btn.next::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* #slide1:checked ~ .carousel-navigation #next1 { display: block; }
+
+#slide2:checked ~ .carousel-navigation #prev2 { display: block; }
+#slide2:checked ~ .carousel-navigation #next2 { display: block; }
+
+#slide3:checked ~ .carousel-navigation #prev3 { display: block; } */
+
+/* Regras para o carrossel RECOMENDADOS */
+#recomendados #rec-slide1:checked ~ .carousel { transform: translateX(0%); }
+#recomendados #rec-slide2:checked ~ .carousel { transform: translateX(-33.333%); }
+#recomendados #rec-slide3:checked ~ .carousel { transform: translateX(-66.666%); }
+
+#recomendados #rec-slide1:checked ~ .carousel-navigation .next[for="rec-slide2"] { display: block; }
+#recomendados #rec-slide2:checked ~ .carousel-navigation .prev[for="rec-slide1"] { display: block; }
+#recomendados #rec-slide2:checked ~ .carousel-navigation .next[for="rec-slide3"] { display: block; }
+#recomendados #rec-slide3:checked ~ .carousel-navigation .prev[for="rec-slide2"] { display: block; }
+
+
+/* Regras para o carrossel MAIS VISITADOS */
+#mais-visitados #mv-slide1:checked ~ .carousel { transform: translateX(0%); }
+#mais-visitados #mv-slide2:checked ~ .carousel { transform: translateX(-50%); }
+
+#mais-visitados #mv-slide1:checked ~ .carousel-navigation .next[for="mv-slide2"] { display: block; }
+#mais-visitados #mv-slide2:checked ~ .carousel-navigation .prev[for="mv-slide1"] { display: block; }
+
+
+/* Regras para o carrossel POPULARES */
+#populares #pop-slide1:checked ~ .carousel { transform: translateX(0%); }
+#populares #pop-slide2:checked ~ .carousel { transform: translateX(-50%); }
+
+#populares #pop-slide1:checked ~ .carousel-navigation .next[for="pop-slide2"] { display: block; }
+#populares #pop-slide2:checked ~ .carousel-navigation .prev[for="pop-slide1"] { display: block; }
+
 
 .barbearia-card {
     width: 14rem;
     height: 18.5rem;
     border-radius: 16px;
     background-color: #1A1B1F;
+    /* flex-basis: 16%; */
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -276,38 +371,4 @@ body {
     font-size: 20px;
     color: white;
     margin-bottom: 1.5rem;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(38, 39, 43, 0.8);
-    color: white;
-    border: 1px solid rgba(58, 59, 63, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.7;
-    transition: opacity 0.2s ease, background-color 0.2s ease;
-}
-
-.carousel-button:hover {
-    opacity: 1;
-    background-color: rgba(58, 59, 63, 1);
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
 }
