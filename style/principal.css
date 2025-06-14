@@ -363,3 +363,119 @@ body {
     color: white;
     margin-bottom: 1.5rem;
 }
+
+
+
+@media (max-width: 1024px) {
+    #section-principal {
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+
+    #card-usuario {
+        margin-left: 2rem;
+    }
+
+    #recomendados {
+        padding-left: 0;
+        margin-right: 2rem;
+    }
+
+    
+    #section-principal {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+
+    #card-usuario {
+        margin-left: 0;
+        width: 100%;
+        max-width: 27rem;
+        height: auto;
+    }
+    
+    #recomendados {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    #recomendados .carousel-wrapper {
+        max-width: 100%;
+    }
+
+    .barbearia-card-section {
+        margin: 2rem 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1rem;
+        width: auto;
+    }
+
+    .carousel > .barbearia-card {
+        scroll-snap-align: start;
+    }
+
+    .carousel-wrapper > input,
+    .carousel-navigation {
+        display: none;
+    }
+    
+    #recomendados #rec-slide1:checked ~ .carousel,
+    #recomendados #rec-slide2:checked ~ .carousel,
+    #recomendados #rec-slide3:checked ~ .carousel,
+    #mais-visitados #mv-slide1:checked ~ .carousel,
+    #mais-visitados #mv-slide2:checked ~ .carousel,
+    #populares #pop-slide1:checked ~ .carousel,
+    #populares #pop-slide2:checked ~ .carousel {
+        transform: translateX(0%);
+    }
+    
+    #section-principal {
+        padding: 1rem;
+    }
+
+    #buscar-barbearias-container input[type="text"] {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+
+    .barbearia-card {
+        width: 12rem;
+        height: auto;
+    }
+
+    .barbearia-card-img {
+        height: 9rem;
+    }
+
+    .barbearia-card h3 {
+        font-size: 14px;
+    }
+
+    .barbearia-card address {
+        font-size: 11px;
+    }
+
+    .barbearia-card-section {
+        margin: 1.5rem 1rem;
+    }
+
+    .barbearia-card-section h2 {
+        font-size: 18px;
+    }
+}
