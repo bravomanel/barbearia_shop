@@ -185,3 +185,22 @@ main {
     padding: 2.5rem 0 1.5rem 0;
     font-weight: 400;
 }
+
+
+ @media (max-width: 1024px) {    
+    main {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .barbearia, .sobre {
+        width: 100%;
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+    
+    .sobre {
+        width: calc(98% - 2rem);
+    }
+}
