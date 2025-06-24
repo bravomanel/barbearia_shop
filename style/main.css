@@ -12,6 +12,8 @@ html {
 }
 
 body {
+    background-color: #141518;
+    color: #FFFFFF;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -598,4 +600,623 @@ button {
         gap: 0;
     }
     
+}
+
+
+/* Principal */
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/index-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#section-principal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 27rem;
+    padding: 0 2rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    gap: 4rem;
+}
+
+#card-usuario {
+    margin-left: 7rem;
+    width: 27rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#buscar-barbearias-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 1.25rem 0;
+}
+
+#buscar-barbearias-container input[type="text"] {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #1A1B1F;
+    font-size: 16px;
+    color: white;
+}
+
+#buscar-barbearias-container button {
+    width: 3rem;
+    background-color: #26272B;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+#buscar-barbearias-container button img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0;
+}
+
+#buscar-barbearias-container button {
+    background-color: #744CF9;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 12px;
+}
+
+#recomendados {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    max-width: 45rem;
+    padding-left: 2rem;
+    margin-right: 7rem;
+}
+
+#recomendados h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    display: flex;
+    gap: 2rem;
+    min-height: 18.5rem;
+    width: 325%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#recomendados .carousel-wrapper {
+    max-width: 480px;
+}
+
+#mais-visitados .carousel,
+#populares .carousel {
+    width: 200%;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-wrapper > input {
+    display: none;
+}
+
+#slide1:checked ~ .carousel {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .carousel {
+    transform: translateX(-33.333%);
+}
+#slide3:checked ~ .carousel {
+    transform: translateX(-66.666%);
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #141518;
+    border: 2px solid #4E525B;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+}
+.nav-btn.prev {
+    left: -0px;
+}
+.nav-btn.prev::after {
+    transform: translate(-35%, -50%) rotate(-135deg);
+}
+.nav-btn.next {
+    right: -0px;
+}
+.nav-btn.next::after {
+    transform: translate(-65%, -50%) rotate(45deg);
+}
+
+#recomendados #rec-slide1:checked ~ .carousel { transform: translateX(0%); }
+#recomendados #rec-slide2:checked ~ .carousel { transform: translateX(-33.333%); }
+#recomendados #rec-slide3:checked ~ .carousel { transform: translateX(-66.666%); }
+
+#recomendados #rec-slide1:checked ~ .carousel-navigation .next[for="rec-slide2"] { display: block; }
+#recomendados #rec-slide2:checked ~ .carousel-navigation .prev[for="rec-slide1"] { display: block; }
+#recomendados #rec-slide2:checked ~ .carousel-navigation .next[for="rec-slide3"] { display: block; }
+#recomendados #rec-slide3:checked ~ .carousel-navigation .prev[for="rec-slide2"] { display: block; }
+
+
+#mais-visitados #mv-slide1:checked ~ .carousel { transform: translateX(0%); }
+#mais-visitados #mv-slide2:checked ~ .carousel { transform: translateX(-50%); }
+
+#mais-visitados #mv-slide1:checked ~ .carousel-navigation .next[for="mv-slide2"] { display: block; }
+#mais-visitados #mv-slide2:checked ~ .carousel-navigation .prev[for="mv-slide1"] { display: block; }
+
+
+#populares #pop-slide1:checked ~ .carousel { transform: translateX(0%); }
+#populares #pop-slide2:checked ~ .carousel { transform: translateX(-50%); }
+
+#populares #pop-slide1:checked ~ .carousel-navigation .next[for="pop-slide2"] { display: block; }
+#populares #pop-slide2:checked ~ .carousel-navigation .prev[for="pop-slide1"] { display: block; }
+
+
+.barbearia-card {
+    width: 14rem;
+    height: 18.5rem;
+    border-radius: 16px;
+    background-color: #1A1B1F;
+    /* flex-basis: 16%; */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.nota-barbearia {
+    position:absolute;
+    margin: 0.5rem;
+    width: 3.5rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: rgba(34, 28, 61, 0.7);
+    z-index: 2;
+}
+
+.nota-barbearia p {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 0.25rem;
+}
+
+.img-estrela {
+    height: 12px;
+    width: auto;
+}
+
+.barbearia-card figure {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.barbearia-card-img {
+    width: 100%;
+    height: 10.5rem;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+.barbearia-card h3 {
+    font-size: 16px;
+    margin-bottom: 0.25rem;
+}
+
+.barbearia-card address {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: #838896;
+    padding-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.barbearia-content {
+    margin: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.barbearia-card-section {
+    margin: 2rem 7rem;
+    max-width: 75rem;
+    position: relative;
+}
+
+.barbearia-card-section h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+
+
+ @media (max-width: 1024px) {
+    #section-principal {
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+
+    #card-usuario {
+        margin-left: 2rem;
+    }
+
+    #recomendados {
+        padding-left: 0;
+        margin-right: 2rem;
+    }
+
+    
+    #section-principal {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+
+    #card-usuario {
+        margin-left: 0;
+        width: 100%;
+        max-width: 27rem;
+        height: auto;
+    }
+    
+    #recomendados {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    #recomendados .carousel-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .carousel-wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #recomendados, #mais-visitados, #populares {
+        width: 90vw;
+        padding: 5vw;
+        margin: 0;
+    }
+
+    .carousel {
+        width: max-content;
+        transform: translateX(0) !important;
+    }
+
+    .carousel-navigation {
+        display: none;
+    }
+}
+
+
+
+/* Agendamento */
+
+.agendamentos-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.agendamentos {
+    width: calc(50% - 9rem);
+    margin-left: 9rem;
+    max-width: 45rem;
+    /* justify-self: flex-end; */
+}
+
+.agendamento {
+    background-color: #1A1B1F;
+    border: 1px solid #333;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+
+
+.agendamentos h3 {
+    color: #838896;
+    font-size: 16px;
+    margin: 0.75rem 0;
+}
+
+#agendamentos-principal h3 {
+    font-size: 14px;
+    color: #838896;
+}
+
+
+.agendamento-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.status {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.25rem;
+    margin-left: 0.5rem;
+    width: fit-content;
+}
+
+.status-confirmado {
+    background-color: #221C3D;
+    color: #8162FF;
+}
+
+.status-finalizado {
+    background-color: #26272B;
+    color: #838896;
+}
+
+.agendamento-info h4 {
+    margin: 0;
+    margin-bottom: 0.75rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.agendamento-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #838896;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.agendamento-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    color: white;
+    width: 6rem;
+    padding: 1rem;
+    border-left: 2px solid #26272B;
+    padding-left: 1rem;
+}
+
+.agendamento-titulo {
+    margin-left: 1rem;
+}
+
+.barbearia-icone {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.agendamento-data .mes {
+    font-size: 12px;
+    color: #838896;
+}
+
+.agendamento-data .dia {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.agendamento-data .hora {
+    font-size: 12px;
+    color: #838896;
+}
+
+
+/* Sobre */
+
+
+.sobre {
+    width: 30%;
+    max-width: 45rem;
+    height: 100%;
+    margin-right: 5rem;
+    background-color: #1A1B1F;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.barber-adress-img {
+    width: 100%;
+}
+
+.sobre-info {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #26272B;
+}
+
+.sobre-info p {
+    font-size: 14px;
+    color: #838896;
+    padding-top: 0.75rem;
+}
+
+.telefone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #26272B;
+    padding: 1rem 0;
+}
+
+.telefone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button {
+    background-color: #26272B;
+    height: 40px;
+}
+
+/* Resumo Reserva */
+
+.reserva-resumo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 1rem 0;
+    padding: 1rem;
+
+    background-color: #1A1B1F;
+    border-radius: 16px;
+    border: 2px solid #26272B;
+
+}
+
+.reserva-resumo-titulo {
+    color: #838896;
+    text-align: left;
+}
+
+.reserva-resumo-titulo h3 {
+    color: white;
+    font-size: 18px;
+}
+.reserva-resumo-titulo h3, 
+.reserva-resumo-titulo h4,
+.reserva-resumo-info p {
+    padding-bottom: 1rem;
+}
+
+.reserva-resumo-info p {
+    text-align: end;
+}
+
+.cancelar-reserva {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    width: 100%;
+    height: 2.5rem;
+    padding: 1.25rem;
+
+    border-radius: 12px;
+
+    background-color: #EF4444;
+}
+
+
+ @media (max-width: 1024px) {    
+    .agendamentos, .sobre {
+        width: 100%;
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+    
+    
+    .sobre {
+        width: calc(98% - 2rem);
+    }
+}
+
+ @media (max-width: 768px) {    
+    .agendamentos-main {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
 }
